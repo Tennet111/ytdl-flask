@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+<body style="font-family: Segoe UI;">
+    <div style="padding: 20px;">
+        <h2>PyTube Flask</h2>
+        <div>
+            <h3>mp4</h3>
+            <p>Youtube URL: </p>
+            <div>
+                <form action="http://127.0.0.1:5000/mp4" method="get">
+                    <input type="text" name="v" style="width: 80%;" required>
+                    <div style="margin-top: 10px;">
+                        <input type="checkbox" name="highres">Highest Quality
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <input type="submit" value="Download MP4">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h3>mp3</h3>
+            <p>Youtube URL: </p>
+            <div>
+                <form action="http://127.0.0.1:5000/mp3" method="get">
+                    <input type="text" name="v" style="width: 80%;" required>
+                    <div style="margin-top: 10px;">
+                        <input type="submit" value="Download MP3">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
